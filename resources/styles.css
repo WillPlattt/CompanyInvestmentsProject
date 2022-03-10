@@ -1,7 +1,7 @@
 /* Universal styles */
 
 * {
-  background-color: white;
+
 }
 
 html {
@@ -9,6 +9,10 @@ html {
 
 }
 
+figcaption {
+  font-family: "playfair";
+  text-align: center;
+}
 /* Fonts */
 @font-face {
   font-family: "playfair";
@@ -34,6 +38,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  background-color: white;
 }
 
 header .content {
@@ -59,6 +64,7 @@ header .logo img {
 
 .header-content nav ul {
   display: flex;
+  font-size: 1rem;
   list-style-type: none;
   padding-left: 3rem;
   padding-top: 0.75em;
@@ -71,7 +77,7 @@ header .logo img {
 .header-content nav a {
   text-decoration: none;
   color: black;
-  font-family: "playfair";
+  font-family: "smoochsans";
   display: inline;
   padding-left: 3rem;
 
@@ -80,10 +86,147 @@ header .logo img {
 /* Mission Statement */
 
 .mission-statement {
+  
   margin-top: 5rem;
+  text-align: center;
+  background-image: url("images/main-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
 }
+
+.mission-container {
+  display: flex;
+  height: 700px;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission-container .banner {
+  height: 100px;
+  width: 100%;
+}
+
+#banner-heading1 {
+  font-family: "sixcaps";
+  letter-spacing: 0.2rem;
+  font-size: 3rem;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+#banner-heading2 {
+  font-family: "smoochsans";
+  color: white;
+}
+
 /* Hospitality Portfolio */
+
+
+.hospitality-head {
+  text-align: center;
+}
+
+#hospitality-head1 {
+  font-family: "sixcaps";
+  letter-spacing: 0.2rem;
+}
+
+#hospitality-head2 {
+  font-family: "smoochsans";
+}
+
+#flex-portfolio {
+  display: flex;
+  height: auto;
+  justify-content: center;
+  align-content: space-between;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+
+}
+
+.hospitality main img {
+  height: 200px;
+  flex: 1 1 0;
+}
 
 /* Our Team*/
 
+.team-head h1 {
+  text-align: center;
+  font-family: "sixcaps";
+  font-size: 2em;
+  letter-spacing: 0.2rem;
+}
+
+.team-members {
+  height: 500px;
+  width: 100%;
+
+
+}
+
+#flex-team {
+  display: flex;
+  height: auto;
+  justify-content: center;
+  align-content: space-between;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.team-members .member {
+  justify-self: center;
+  height: auto;
+  flex: 1 1 0;
+}
+
+.member img {
+display: block;
+margin: auto;
+}
+
+.member p {
+  text-align: center;
+  font-size: 1rem;
+  color: gray;
+}
+
+.member h2 {
+  font-family: "smoochsans";
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+}
 /* Footer */
+
+footer {
+  display: flex;
+  background-color: gray;
+  height: auto;
+  width: 100%;
+  justify-content: flex-start;
+  
+}
+.contact-info p {
+  display: flex;
+  height: auto;
+  font-family: "smoochsans";
+  justify-content: flex-start;
+  margin-left: 20px; 
+}
+
+.copyright {
+  display: flex;
+  height: auto;
+  float: right;
+  font-family: "playfair";
+  font-size: 0.5rem;
+  width: 100%;
+  justify-content: flex-end;
+  padding-top: 10%;
+  margin-right: 20px; 
+}
